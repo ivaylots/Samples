@@ -50,7 +50,7 @@ namespace Android
 
             // Initialize the Appium driver
             driver = new AndroidDriver<AndroidElement>(
-                   new Uri(string.Format("https://{0}.perfectomobile.com/nexperience/perfectomobile/wd/hub/fast", cloudName)), capabilities);
+                   new Uri(string.Format("https://{0}.perfectomobile.com/nexperience/perfectomobile/wd/hub", cloudName)), capabilities);
 
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
 
